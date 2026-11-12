@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px 12px;
+  background:
+    radial-gradient(circle at 50% 0%, #24365f 0%, transparent 45%),
+    #090d19;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  width: 100%;
+  max-width: 470px;
+  margin: auto;
+  padding: 22px;
+  border: 1px solid #293654;
+  border-radius: 27px;
+  background: linear-gradient(160deg, #151e32, #101625 65%);
+  box-shadow: 0 20px 60px #0008;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  font-size: 29px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #f5c451, #e68d27);
+  box-shadow: 0 6px 20px #e99d3040;
+}
+
+.top h1 {
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.top p {
+  color: #9ba9c4;
+  font-size: 12px;
+}
+
+.mode-box {
+  display: flex;
+  gap: 9px;
+  padding: 6px;
+  border-radius: 15px;
+  background: #0b1220;
+  margin-bottom: 20px;
+}
+
+.mode {
+  flex: 1;
+  border: 0;
+  border-radius: 11px;
+  padding: 12px 5px;
+  background: transparent;
+  color: #aab6cd;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.mode.active {
+  color: #171b25;
+  background: linear-gradient(135deg, #ffd875, #e9a735);
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 17px 8px;
+  border: 1px solid #2a3855;
+  border-radius: 19px;
+  background: #19243a;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.score span {
+  color: #aab8d0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.score strong {
+  color: #ffd36b;
+  font-size: 31px;
+  line-height: 1.3;
+}
+
+.versus, .arena-vs {
+  color: #7786a5;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.round-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 19px 0;
+  color: #aab6cb;
+  font-size: 12px;
+}
+
+.round-info strong {
+  color: #ffd36b;
+  font-size: 16px;
+}
+
+.target {
+  margin-right: auto;
+  color: #8492ac;
+  font-size: 10px;
+}
+
+.arena {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 155px;
+  padding: 15px 5px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1d2a43, #141e32);
+}
+
+.fighter {
+  text-align: center;
+  min-width: 100px;
+}
+
+.fighter-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 8px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #3a4966;
+  border-radius: 24px;
+  background: #10192a;
+  font-size: 43px;
+  transition: transform .2s;
+}
+
+.fighter h3 {
+  font-size: 12px;
+  color: #c1cbe0;
+}
+
+.message {
+  margin: 18px 0 13px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffd36b;
+  min-height: 28px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.choice {
+  min-height: 105px;
+  border: 1px solid #354663;
+  border-radius: 17px;
+  background: #1b2941;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: .2s;
+}
+
+.choice:active {
+  transform: scale(.94);
+}
+
+.choice:hover {
+  border-color: #f4c35c;
+  background: #263650;
+}
+
+.choice span {
+  font-size: 36px;
+}
+
+.choice small {
+  color: #bdc8dc;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hint {
+  margin: 12px 0;
+  text-align: center;
+  color: #8492ac;
+  font-size: 11px;
+  min-height: 23px;
+}
+
+.result-panel {
+  padding: 14px;
+  border: 1px solid #2b3b59;
+  border-radius: 15px;
+  background: #111a2b;
+  text-align: center;
+}
+
+.result-title {
+  color: #8292ae;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+#resultText {
+  font-size: 14px;
+  font-weight: 800;
+  color: #dce5f5;
+}
+
+.actions {
+  margin-top: 17px;
+}
+
+.reset {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #ffd875, #e8a436);
+  color: #1b1d25;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.reset:active {
+  transform: scale(.98);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #53627e;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 360px) {
+  .app { padding: 15px; }
+  .fighter-icon { width: 70px; height: 70px; font-size: 36px; }
+  .choice { min-height: 90px; }
+}

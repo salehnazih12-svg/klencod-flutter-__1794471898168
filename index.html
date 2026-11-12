@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجر ورقة مقص</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="logo">✊</div>
+      <div>
+        <h1>حجر ورقة مقص</h1>
+        <p>تحدَّ خصمك وأثبت مهارتك!</p>
+      </div>
+    </header>
+
+    <section class="mode-box">
+      <button class="mode active" data-mode="ai">🤖 ضد الكمبيوتر</button>
+      <button class="mode" data-mode="local">👥 لاعبان</button>
+    </section>
+
+    <section class="scoreboard">
+      <div class="score">
+        <span id="leftName">أنت</span>
+        <strong id="playerScore">0</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="score">
+        <span id="rightName">الكمبيوتر</span>
+        <strong id="computerScore">0</strong>
+      </div>
+    </section>
+
+    <section class="round-info">
+      <span>الجولة</span>
+      <strong id="roundNumber">1</strong>
+      <span class="target">الفوز عند 5 نقاط</span>
+    </section>
+
+    <section class="arena">
+      <div class="fighter">
+        <div class="fighter-icon" id="leftHand">❔</div>
+        <h3 id="leftLabel">أنت</h3>
+      </div>
+      <div class="arena-vs">VS</div>
+      <div class="fighter">
+        <div class="fighter-icon" id="rightHand">❔</div>
+        <h3 id="rightLabel">الكمبيوتر</h3>
+      </div>
+    </section>
+
+    <div class="message" id="message">اختر حركتك للبدء!</div>
+
+    <section class="choices" id="choices">
+      <button class="choice" data-choice="rock">
+        <span>✊</span><small>حجر</small>
+      </button>
+      <button class="choice" data-choice="paper">
+        <span>✋</span><small>ورقة</small>
+      </button>
+      <button class="choice" data-choice="scissors">
+        <span>✌️</span><small>مقص</small>
+      </button>
+    </section>
+
+    <p class="hint" id="hint">اختر الحجر أو الورقة أو المقص.</p>
+
+    <section class="result-panel" id="resultPanel">
+      <div class="result-title">نتيجة الجولة</div>
+      <div id="resultText">ابدأ اللعب!</div>
+    </section>
+
+    <div class="actions">
+      <button class="reset" id="resetBtn">↻ إعادة اللعب</button>
+    </div>
+
+    <footer>ROCK • PAPER • SCISSORS</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

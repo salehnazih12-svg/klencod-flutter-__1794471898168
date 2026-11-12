@@ -1,0 +1,19 @@
+{
+  "name": "حجره",
+  "short_name": "حجره",
+  "description": "حجره - مشروع ويب",
+  "id": "com.klencod.web.project_1794468357497",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1117",
+  "theme_color": "#1F6FEB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "حجره - مشروع ويب",
+  "appId": "com.klencod.web.project_1794468357497",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": ["web", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT"
+}
